@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { SimplePost } from "./components/1Simple/SimplePost";
 
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<>
-			<h1>Hello world</h1>
+			<SimplePost
+				content="The sky is blue"
+				user="Alex"
+				likesBy={["John", "Mary"]}
+			/>
 		</>
 	);
 }
